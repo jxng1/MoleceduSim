@@ -20,8 +20,15 @@ public class UIScripts : MonoBehaviour
             {
                 this.passwordField.contentType = InputField.ContentType.Standard;
             }
-            this.passwordField.ForceLabelUpdate();
+            this.passwordField.ActivateInputField();
+            StartCoroutine(WaitForNextFrame());
         }
+    }
+
+    IEnumerator WaitForNextFrame()
+    {
+        yield return null;
+        this.passwordField.MoveTextEnd(true);
     }
 
 
