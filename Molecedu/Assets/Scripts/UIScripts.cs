@@ -10,6 +10,7 @@ public class UIScripts : MonoBehaviour
 
     public void ShowHidePassword()
     {
+        InputField input = GetComponentInParent<InputField>();
         if (this.passwordField != null)
         {
             if (this.passwordField.contentType == InputField.ContentType.Standard)
