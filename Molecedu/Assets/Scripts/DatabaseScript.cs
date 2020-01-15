@@ -6,21 +6,9 @@ using Mono.Data.Sqlite;
 
 public class DatabaseScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public List<User> ReadInAccounts(List<User> users)
     {
-        string connectionString = "URI=file:" + Application.dataPath + "/Databases/UsersInfo.db"; //Connection to db.
+        string connectionString = "URI=file:" + Application.dataPath + "/Databases/Database.db"; //Connection to db.
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();
@@ -46,7 +34,7 @@ public class DatabaseScript : MonoBehaviour
 
     public void SaveNewAccount(User newAccount)
     {
-        string connectionString = "URI=file:" + Application.dataPath + "/Databases/UsersInfo.db"; //Connection to db.
+        string connectionString = "URI=file:" + Application.dataPath + "/Databases/Database.db"; //Connection to db.
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             {
@@ -66,4 +54,3 @@ public class DatabaseScript : MonoBehaviour
 
 
 }
-
