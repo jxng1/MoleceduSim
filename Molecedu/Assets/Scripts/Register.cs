@@ -24,8 +24,8 @@ public class Register : MonoBehaviour
     public InputField fullNameInput;
     public InputField adminCodeInput;
     public Button adminCodeButton;
-    List<User> users = new List<User>();
-    User newAccount = new User();
+    private List<User> users = new List<User>();
+    private User newAccount = new User();
 
     void Start()
     {
@@ -34,19 +34,20 @@ public class Register : MonoBehaviour
         interfaceScriptAccess = FindObjectOfType<InterfaceScript>();
     }
     public void Authentication()
-    {     
+    {
         users = databaseAccess.ReadInAccounts(users);
         string username = usernameInput.text;
         string password = passwordInput.text;
         string fullName = fullNameInput.text;
-        if (CheckUsername(username) == false) { interfaceScriptAccess.CloseOpenInterface(usernameExists); }
-        else { CheckPassword(password); newAccount.username = username; }
-        if (CheckPassword(password) == false) { interfaceScriptAccess.CloseOpenInterface(passwordInvalid); }
-        else { CreatePassword(password); }
-        if (CheckFullname(fullName) == false) { interfaceScriptAccess.CloseOpenInterface(blanks); }
-        else { newAccount.fullName = fullName; }
-        adminCodeButton.onClick.AddListener(CheckAdminCode);
-
+        if (!(string.IsNullOrWhiteSpace(username)) && !(string.IsNullOrWhiteSpace(password)) && !(string.IsNullOrWhiteSpace(fullName)))
+        {
+            if (CheckUsername(username) == false) { interfaceScriptAccess.CloseOpenInterface(usernameExists); }
+            else { newAccount.username = username; }
+            if (CheckPassword(password) == false) { interfaceScriptAccess.CloseOpenInterface(passwordInvalid); }
+            else { CreatePassword(password); interfaceScriptAccess.CloseOpenInterface(register); interfaceScriptAccess.CloseOpenInterface(adminCodePanel); adminCodeButton.onClick.AddListener(CheckAdminCode); }
+            newAccount.fullName = fullName;
+        }
+        else {interfaceScriptAccess.CloseOpenInterface(blanks);}        
     }
     public bool CheckUsername(string username)
     {
@@ -103,20 +104,11 @@ public class Register : MonoBehaviour
         return s;
     }
 
-    public bool CheckFullname(string fullName)
-    {
-        if (!string.IsNullOrEmpty(fullName)) { return true; }
-        else { return false; }
-    }
-
     public void CheckAdminCode()
     {
         bool valid = false;
-        while (valid == false)
-        {
-            if (!adminCodeInput.text.Equals("PGSCSTAFF")) { interfaceScriptAccess.CloseOpenInterface(adminCodeError); adminCodeInput.text = ""; }
-            else { valid = true; }
-        }
+        if (!adminCodeInput.text.Equals("PGSCSTAFF")) { interfaceScriptAccess.CloseOpenInterface(adminCodeError); adminCodeInput.text = ""; }
+        else { valid = true; }
         if (valid == true) { users.Add(newAccount); databaseAccess.SaveNewAccount(newAccount); interfaceScriptAccess.CloseOpenInterface(adminCodePanel); interfaceScriptAccess.CloseOpenInterface(login); }
         usernameInput.text = "";
         passwordInput.text = "";

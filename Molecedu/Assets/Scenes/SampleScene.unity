@@ -153,7 +153,7 @@ RectTransform:
   m_Children:
   - {fileID: 1334436652}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4302,7 +4302,7 @@ RectTransform:
   m_Children:
   - {fileID: 1675099095}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5033,7 +5033,7 @@ RectTransform:
   m_Children:
   - {fileID: 290183833}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5135,7 +5135,7 @@ RectTransform:
   - {fileID: 1362048171}
   - {fileID: 1347069158}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6505,7 +6505,7 @@ RectTransform:
   m_Children:
   - {fileID: 1841312613}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7406,20 +7406,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117126118}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2117126118}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 2117126119}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10334,7 +10323,7 @@ RectTransform:
   m_Children:
   - {fileID: 1772073531}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12843,7 +12832,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711075700}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1646951984}
+        m_MethodName: Authentication
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &711075700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15577,7 +15577,7 @@ RectTransform:
   m_Children:
   - {fileID: 863849753}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17432,7 +17432,7 @@ RectTransform:
   - {fileID: 1371285249}
   - {fileID: 2132150378}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 4
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18413,7 +18413,7 @@ RectTransform:
   m_Children:
   - {fileID: 1531286662}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18796,7 +18796,7 @@ RectTransform:
   m_Children:
   - {fileID: 1561258116}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24842,20 +24842,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1371285252}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1371285252}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 1371285253}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -26400,7 +26389,7 @@ RectTransform:
   m_Children:
   - {fileID: 378203926}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26980,20 +26969,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 662055174}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 662055174}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 662055175}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -28046,6 +28024,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1646951982}
   - component: {fileID: 1646951981}
+  - component: {fileID: 1646951985}
+  - component: {fileID: 1646951984}
+  - component: {fileID: 1646951983}
   m_Layer: 0
   m_Name: ScriptController
   m_TagString: Untagged
@@ -28079,6 +28060,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1646951983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646951980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d9337a324c0ad4cbe5cfc09bcce087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameExists: {fileID: 2117126118}
+  passwordInvalid: {fileID: 1720561240}
+  blanks: {fileID: 2132150381}
+  adminCodeError: {fileID: 1823109889}
+  login: {fileID: 1086970566}
+  register: {fileID: 12767844}
+  adminCodePanel: {fileID: 1752033333}
+  usernameInput: {fileID: 139188059}
+  passwordInput: {fileID: 938385410}
+  fullNameInput: {fileID: 555371348}
+  adminCodeInput: {fileID: 1506986545}
+  adminCodeButton: {fileID: 1600279420}
+--- !u!114 &1646951984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646951980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ea387a8117d4e4a9e9cd106206f397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameInput: {fileID: 1039368508}
+  passwordInput: {fileID: 1135074985}
+  error: {fileID: 1490645238}
+  adminPanel: {fileID: 1050559658}
+--- !u!114 &1646951985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646951980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493a154d22cbc40488297ad2df1aeb5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652894945
 GameObject:
   m_ObjectHideFlags: 0
@@ -28161,20 +28194,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2132150381}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2132150381}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 2132150382}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -28904,20 +28926,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1490645238}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1490645238}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 1490645239}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29731,7 +29742,7 @@ RectTransform:
   m_Children:
   - {fileID: 828941933}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30135,7 +30146,7 @@ RectTransform:
   - {fileID: 1600279419}
   - {fileID: 1747133696}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31929,9 +31940,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1823109889}
-        m_MethodName: set_alpha
-        m_Mode: 4
+      - m_Target: {fileID: 1823109890}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31940,9 +31951,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1823109889}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 1752033334}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -32146,19 +32157,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1752033334}
-        m_MethodName: CloseOpenInterface
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 12767845}
-        m_MethodName: CloseOpenInterface
+      - m_Target: {fileID: 1646951983}
+        m_MethodName: Authentication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34192,20 +34192,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720561240}
-        m_MethodName: set_alpha
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1720561240}
-        m_MethodName: set_interactable
-        m_Mode: 6
+      - m_Target: {fileID: 1720561241}
+        m_MethodName: CloseOpenInterface
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -34920,7 +34909,7 @@ RectTransform:
   m_Children:
   - {fileID: 1752419702}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35657,7 +35646,7 @@ RectTransform:
   m_Children:
   - {fileID: 889095625}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36523,7 +36512,7 @@ RectTransform:
   m_Children:
   - {fileID: 1421076405}
   m_Father: {fileID: 2137466692}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36684,7 +36673,6 @@ RectTransform:
   - {fileID: 388896173}
   - {fileID: 1955911904}
   - {fileID: 1086970563}
-  - {fileID: 968302470}
   - {fileID: 12767841}
   - {fileID: 1752033330}
   - {fileID: 1050559655}
@@ -36700,6 +36688,7 @@ RectTransform:
   - {fileID: 253681149}
   - {fileID: 2034237526}
   - {fileID: 1524368079}
+  - {fileID: 968302470}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

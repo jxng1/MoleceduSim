@@ -8,7 +8,6 @@ using System.Security.Cryptography;
 public class Login : MonoBehaviour
 {
     private DatabaseScript databaseAccess;
-    private Initialisation variableAccess;
     private InterfaceScript interfaceScriptAccess;
     public InputField usernameInput;
     public InputField passwordInput;
@@ -18,7 +17,6 @@ public class Login : MonoBehaviour
     private void Start()
     {
         databaseAccess = FindObjectOfType<DatabaseScript>();
-        variableAccess = FindObjectOfType<Initialisation>(); //MIGHT BE REDUNDANT
         interfaceScriptAccess = FindObjectOfType<InterfaceScript>();
     }
 
@@ -72,7 +70,6 @@ public class Login : MonoBehaviour
         {
             hash.Append(theByte.ToString("x2"));
         }
-        string hashedTest = hash.ToString();
         if (hash.ToString().Equals(account.hashedPassword)) { valid = true; }
         return valid;
     }
